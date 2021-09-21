@@ -1,12 +1,9 @@
 absl-py==0.11.0
-apturl==0.5.2
 asgiref==3.4.1
 astunparse==1.6.3
 attrs==20.3.0
 autobahn==21.3.1
 Automat==20.2.0
-bcrypt==3.1.7
-binance-connector==1.4.0
 blinker==1.4
 boto3==1.18.31
 botocore==1.21.31
