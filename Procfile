@@ -1,1 +1,1 @@
-worker: python3 cardapio/manage.py runserver
+web: gunicorn --chdir ./cardapio cardapio.wsgi:application
