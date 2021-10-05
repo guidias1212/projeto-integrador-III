@@ -7,7 +7,7 @@ qr = qrcode.QRCode(
     border=4,
 )
 
-qr.add_data('https://medium.com/@ngwaifoong92')
+qr.add_data('http://projeto-integrador-poc.herokuapp.com/show')
 qr.make(fit=True)
 img = qr.make_image(fill_color="black", back_color="white").convert('RGB')
 
