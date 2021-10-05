@@ -76,12 +76,12 @@ WSGI_APPLICATION = 'cardapio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'cardapiodb',
-        'USER':'root',
-        'PASSWORD':'password',
-        'HOST':'localhost',
-        'PORT':'3306'
+        'USER':'ijuaregbuyjeox',
+        'PASSWORD':'ac716ca517161861b37976c522fdcb56c1badaa5fb888bf6bcfe407b9045320f',
+        'HOST':'ec2-52-23-87-65.compute-1.amazonaws.com',
+        'PORT':'5432'
     }
 }
 
