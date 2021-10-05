@@ -1,1 +1,1 @@
-web: python3 cardapio/manage.py runserver
+worker: python3 cardapio/manage.py runserver
