@@ -1,6 +1,7 @@
 from django import forms
-from cardapio_virtual.models import Employee
-class EmployeeForm(forms.ModelForm):
+from cardapio_virtual.models import Item
+
+class ItemForm(forms.ModelForm):
     class Meta:
-        model = Employee
+        model = Item
         fields = "__all__"

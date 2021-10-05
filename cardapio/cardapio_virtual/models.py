@@ -1,11 +1,12 @@
 from django.db import models
 
 # Create your models here.
-from django.db import models
-class Employee(models.Model):
-    eid = models.CharField(max_length=20)
-    ename = models.CharField(max_length=100)
-    eemail = models.EmailField()
-    econtact = models.CharField(max_length=15)
+
+class Item(models.Model):
+    id = models.CharField(max_length=20, primary_key=True)
+    nome = models.CharField(max_length=20)
+    descricao = models.CharField(max_length=20)
+    imagem = models.CharField(max_length=256)
+    preco = models.CharField(max_length=20)
     class Meta:
-        db_table = "employee"  
+        db_table = "itens"

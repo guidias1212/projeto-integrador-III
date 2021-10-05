@@ -2,12 +2,12 @@ from django.shortcuts import render
 
 # Create your views here.
 from django.shortcuts import render, redirect
-from cardapio_virtual.forms import EmployeeForm
-from cardapio_virtual.models import Employee
+from cardapio_virtual.forms import ItemForm
+from cardapio_virtual.models import Item
 # Create your views here.
 def emp(request):
     if request.method == "POST":
-        form = EmployeeForm(request.POST)
+        form = ItemForm(request.POST)
         if form.is_valid():
             try:
                 form.save()
@@ -15,22 +15,22 @@ def emp(request):
             except:
                 pass
     else:
-        form = EmployeeForm()
+        form = ItemForm()
     return render(request,'index.html',{'form':form})
 def show(request):
-    employees = Employee.objects.all()
-    return render(request,"show.html",{'employees':employees})
+    itens = Item.objects.all()
+    return render(request,"show.html",{'itens':itens})
 def edit(request, id):
-    employee = Employee.objects.get(id=id)
-    return render(request,'edit.html', {'employee':employee})
+    item = Item.objects.get(id=id)
+    return render(request,'edit.html', {'item':item})
 def update(request, id):
-    employee = Employee.objects.get(id=id)
-    form = EmployeeForm(request.POST, instance = employee)
+    item = Item.objects.get(id=id)
+    form = ItemForm(request.POST, instance = item)
     if form.is_valid():
         form.save()
         return redirect("/show")
-    return render(request, 'edit.html', {'employee': employee})
+    return render(request, 'edit.html', {'item': item})
 def destroy(request, id):
-    employee = Employee.objects.get(id=id)
-    employee.delete()
+    item = Item.objects.get(id=id)
+    item.delete()
     return redirect("/show")

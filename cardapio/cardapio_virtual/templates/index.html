@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
+    <title>Página Inicial</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
 </head>
@@ -14,37 +14,43 @@
         <div class="form-group row">
             <label class="col-sm-1 col-form-label"></label>
             <div class="col-sm-4">
-                <h3>Enter Details</h3>
+                <h3>Digite as informações do item</h3>
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Employee Id:</label>
+            <label class="col-sm-2 col-form-label">ID Item:</label>
             <div class="col-sm-4">
-                {{ form.eid }}
+                {{ form.id }}
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Employee Name:</label>
+            <label class="col-sm-2 col-form-label">Nome:</label>
             <div class="col-sm-4">
-                {{ form.ename }}
+                {{ form.nome }}
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Employee Email:</label>
+            <label class="col-sm-2 col-form-label">Descrição:</label>
             <div class="col-sm-4">
-                {{ form.eemail }}
+                {{ form.descricao }}
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Employee Contact:</label>
+            <label class="col-sm-2 col-form-label">Imagem:</label>
             <div class="col-sm-4">
-                {{ form.econtact }}
+                {{ form.imagem }}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Preço:</label>
+            <div class="col-sm-4">
+                {{ form.preco }}
             </div>
         </div>
         <div class="form-group row">
             <label class="col-sm-1 col-form-label"></label>
             <div class="col-sm-4">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Criar</button>
             </div>
         </div>
     </div>
