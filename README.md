@@ -18,3 +18,9 @@ sudo service mysql restart
 sudo mysql -u root -p
 >>password
 
+Realizar migrações da base de dados (Modelagem automatica):
+python3 manage.py makemigrations
+python3 manage.py migrate
+
+Ligar aplicação django:
+python3 manage.py runserver
