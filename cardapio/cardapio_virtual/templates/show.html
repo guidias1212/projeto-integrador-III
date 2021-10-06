@@ -25,8 +25,9 @@
         <td>{{ item.id }}</td>
         <td>{{ item.nome }}</td>
         <td>{{ item.descricao }}</td>
-        <td>{{ item.imagem }}</td>
+        <td><img src={{ item.imagem }}></td>
         <td>{{ item.preco }}</td>
+
         <td>
             <a href="/edit/{{ item.id }}"><span class="btn btn-success" >Editar</span></a>
             <a href="/delete/{{ item.id }}" class="btn btn-danger">Excluir</a>
