@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -77,14 +77,15 @@ WSGI_APPLICATION = 'cardapio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dafjhdg5bij83i',
-        'USER':'ijuaregbuyjeox',
-        'PASSWORD':'ac716ca517161861b37976c522fdcb56c1badaa5fb888bf6bcfe407b9045320f',
-        'HOST':'ec2-52-23-87-65.compute-1.amazonaws.com',
-        'PORT':'5432'
+        'NAME': os.environ['DATABASE_NAME'],
+        'USER': os.environ['DATABASE_USER'],
+        'PASSWORD': os.environ['DATABASE_PASSWORD'],
+        'HOST': os.environ['DATABASE_HOST'],
+        'PORT': os.environ['DATABASE_PORT']
     }
 }
 
