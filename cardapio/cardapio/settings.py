@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'projeto-integrador-poc.herokuapp.com',
-    'projeto-integrador-poc.herokuapp.com'
+    'projeto-integrador-poc.herokuapp.com',
+    'localhost'
 ]
 
 
@@ -76,6 +77,17 @@ WSGI_APPLICATION = 'cardapio.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'dafjhdg5bij83i',
+#        'USER':'ijuaregbuyjeox',
+#        'PASSWORD':'ac716ca517161861b37976c522fdcb56c1badaa5fb888bf6bcfe407b9045320f',
+#        'HOST':'ec2-52-23-87-65.compute-1.amazonaws.com',
+#        'PORT':'5432'
+#    }
+#}
 
 
 DATABASES = {
@@ -127,6 +139,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+VENV_PATH = os.path.dirname(BASE_DIR)
+STATIC_ROOT = os.path.join(VENV_PATH, 'cardapio/cardapio_virtual/static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

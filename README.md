@@ -24,3 +24,4 @@ python3 manage.py migrate
 
 Ligar aplicação django:
 python3 manage.py runserver
+gunicorn --chdir ./cardapio cardapio.wsgi:application

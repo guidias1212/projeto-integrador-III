@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Lista de Itens</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QRdappio &mdash; Cardápio Digital</title>
+    <meta name="description" content="Cardápio digital para o seu negócio.">
+    <meta name="keywords" content="menu, cardapio, qrcode, digital, comida">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pinyon+Script" rel="stylesheet">
     {% load static %}
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/styles-merged.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
 </head>
 <body>
-<table class="table table-striped table-bordered table-sm">
+<section class="probootstrap-section-bg overlay" style="background-image: url(../static/img/hero_bg_2.jpg);" data-stellar-background-ratio="0.5" data-section="specialties">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center probootstrap-animate">
+                <div class="probootstrap-heading">
+                    <h2 class="primary-heading">Green</h2>
+                    <h3 class="secondary-heading">Container</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<table class="table table-striped table-bordered table-sm table-responsive">
     <thead class="thead-dark">
     <tr>
         <th>ID</th>
@@ -39,5 +55,7 @@
 <br>
 <br>
 <center><a href="/emp" class="btn btn-primary">Adicionar novo item</a></center>
+<script src="{% static 'js/scripts.min.js' %}"></script>
+<script src="{% static 'js/custom.min.js' %}"></script>
 </body>
 </html>
