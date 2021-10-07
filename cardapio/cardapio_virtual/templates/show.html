@@ -29,14 +29,16 @@
         <div class="row">
             <div class="probootstrap-cell-retro">
                 {% for item in itens %}
-                <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
-                    <div class="image" style="background-image: url({{ item.imagem }});"></div>
-                    <div class="text text-center">
-                        <h3>{{ item.nome }}</h3>
-                        <p>{{ item.descricao }}</p>
-                        <p class="price">R${{ item.preco }}</p>
-                        <a href="/edit/{{ item.id }}"><span class="btn btn-success" >Editar</span></a>
-                        <a href="/delete/{{ item.id }}" class="btn btn-danger">Excluir</a>
+                <div class="half">
+                    <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
+                        <div class="image" style="background-image: url({{ item.imagem }});"></div>
+                        <div class="text text-center">
+                            <h3>{{ item.nome }}</h3>
+                            <p>{{ item.descricao }}</p>
+                            <p class="price">R${{ item.preco }}</p>
+                            <a href="/edit/{{ item.id }}"><span class="btn btn-success" >Editar</span></a>
+                            <a href="/delete/{{ item.id }}" class="btn btn-danger">Excluir</a>
+                        </div>
                     </div>
                 </div>
                 {% endfor %}
