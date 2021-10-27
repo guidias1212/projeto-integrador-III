@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
 </head>
 <body>
-
 <section class="probootstrap-section-bg overlay" style="background-image: url(../static/img/hero_bg_2.jpg);" data-stellar-background-ratio="0.5" data-section="specialties">
     <div class="container">
         <div class="row">
@@ -37,6 +36,8 @@
                             <h3>{{ item.nome }}</h3>
                             <p>{{ item.descricao }}</p>
                             <p class="price">R${{ item.preco }}</p>
+                            <a href="/edit/{{ item.id }}"><span class="btn btn-success" >Editar</span></a>
+                            <a href="/delete/{{ item.id }}" class="btn btn-danger">Excluir</a>
                         </div>
                     </div>
                 </div>
@@ -47,7 +48,10 @@
 </section>
 <br>
 <br>
-<center><a href="/management/login" class="btn btn-primary">Login</a></center>
+<center><a href="/emp" class="btn btn-primary">Adicionar novo item</a></center>
+<br>
+<br>
+<center><a href="/show" class="btn btn-primary">Logout</a></center>
 <br>
 <br>
 <section class="probootstrap-footer">

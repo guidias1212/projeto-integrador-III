@@ -9,6 +9,9 @@ https://betterprogramming.pub/how-to-generate-and-decode-qr-codes-in-python-a933
 Criar projeto CRUD em Django com frontend:
 https://www.javatpoint.com/django-crud-application
 
+Criar sistema de autenticação:
+https://learndjango.com/tutorials/django-login-and-logout-tutorial
+
 Como ligar/desligar uma base de dados MySQL e saber o status:
 sudo service mysql status
 sudo service mysql stop

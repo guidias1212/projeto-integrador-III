@@ -28,9 +28,12 @@ def update(request, id):
     form = ItemForm(request.POST, instance = item)
     if form.is_valid():
         form.save()
-        return redirect("/show")
+        return redirect("/administrator")
     return render(request, 'edit.html', {'item': item})
 def destroy(request, id):
     item = Item.objects.get(id=id)
     item.delete()
-    return redirect("/show")
+    return redirect("/administrator")
+def administrator(request):
+    itens = Item.objects.all()
+    return render(request,"administrator.html",{'itens':itens})
