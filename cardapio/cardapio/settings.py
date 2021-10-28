@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'cardapio.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -88,7 +88,6 @@ DATABASES = {
         'PORT':'5432'
     }
 }
-
 '''
 DATABASES = {
     'default': {
@@ -100,7 +99,7 @@ DATABASES = {
         'PORT': os.environ['DATABASE_PORT']
     }
 }
-'''
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -149,3 +148,5 @@ STATIC_ROOT = os.path.join(VENV_PATH, 'cardapio/cardapio_virtual/static')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = '/administrator'
+
+LOGOUT_REDIRECT_URL = '/show'

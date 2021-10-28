@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{% static 'css/styles-merged.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
 </head>
+{% if user.is_authenticated %}
 <body>
 <section class="probootstrap-section-bg overlay" style="background-image: url(../static/img/hero_bg_2.jpg);" data-stellar-background-ratio="0.5" data-section="specialties">
     <div class="container">
@@ -51,7 +52,7 @@
 <center><a href="/emp" class="btn btn-primary">Adicionar novo item</a></center>
 <br>
 <br>
-<center><a href="/show" class="btn btn-primary">Logout</a></center>
+<center><a class="btn btn-primary" href="{% url 'logout' %}">Log Out</a></center>
 <br>
 <br>
 <section class="probootstrap-footer">
@@ -90,3 +91,4 @@
 <script src="{% static 'js/custom.min.js' %}"></script>
 </body>
 </html>
+{% endif %}
