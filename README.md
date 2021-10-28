@@ -12,6 +12,9 @@ https://www.javatpoint.com/django-crud-application
 Criar sistema de autenticação:
 https://learndjango.com/tutorials/django-login-and-logout-tutorial
 
+Criar usuario no Heroku:
+heroku run python manage.py createsuperuser
+
 Como ligar/desligar uma base de dados MySQL e saber o status:
 sudo service mysql status
 sudo service mysql stop
@@ -28,3 +31,7 @@ python3 manage.py migrate
 Ligar aplicação django:
 python3 manage.py runserver
 gunicorn --chdir ./cardapio cardapio.wsgi:application
+
+Credenciais temporarias para teste:
+greencontainer
+adminunivespadmin
