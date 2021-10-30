@@ -12,6 +12,9 @@ https://www.javatpoint.com/django-crud-application
 Criar sistema de autenticação:
 https://learndjango.com/tutorials/django-login-and-logout-tutorial
 
+Criar sistema de integração de imagens:
+https://cloudinary.com/documentation/upload_widget
+
 Criar usuario no Heroku:
 heroku run python manage.py createsuperuser
 
