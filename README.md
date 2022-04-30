@@ -37,5 +37,6 @@ python3 manage.py runserver
 gunicorn --chdir ./cardapio cardapio.wsgi:application
 
 Credenciais temporarias para teste:
+http://projeto-integrador-poc.herokuapp.com/show
 greencontainer
 adminunivespadmin
