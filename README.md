@@ -40,3 +40,9 @@ Credenciais temporarias para teste:
 http://projeto-integrador-poc.herokuapp.com/show
 greencontainer
 adminunivespadmin
+
+
+Subir manualmente no Heroku - Comandos:
+heroku login
+heroku git:remote -a projeto-integrador-poc
+git push heroku main
