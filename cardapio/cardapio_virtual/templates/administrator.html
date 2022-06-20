@@ -3,9 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> 
-        <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fprojeto-integrador-poc.herokuapp.com%2Fadministrator&width=150&layout=button_count&action=like&size=large&share=false&height=21&appId" width="150" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-    </title>
     <title>QRdappio &mdash; Painel Administrativo</title>
     <meta name="description" content="Cardápio digital para o seu negócio.">
     <meta name="keywords" content="menu, cardapio, qrcode, digital, comida">
@@ -17,6 +14,7 @@
 {% if user.is_authenticated %}
 <body>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v14.0" nonce="O1e4QN7O"></script>
+    <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fprojeto-integrador-poc.herokuapp.com%2Fadministrator&width=150&layout=button_count&action=like&size=large&share=false&height=21&appId" width="150" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
     <section class="probootstrap-section-bg overlay" style="background-image: url(../static/img/hero_bg_2.jpg);" data-stellar-background-ratio="0.5" data-section="specialties">
     <div class="container">
         <div class="row">
