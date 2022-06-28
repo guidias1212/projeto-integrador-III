@@ -27,4 +27,5 @@ urlpatterns = [
     path('delete/<int:id>', views.destroy),
     path('management/',include('django.contrib.auth.urls')),
     path('administrator',views.administrator),
+    path('like/<int:id>',views.like),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

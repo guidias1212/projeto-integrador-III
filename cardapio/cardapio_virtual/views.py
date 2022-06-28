@@ -22,7 +22,7 @@ def emp(request):
     else:
         return redirect("/show")
 def show(request):
-    itens = Item.objects.all()
+    itens = Item.objects.all().order_by('-curtidas')
     return render(request,"show.html",{'itens':itens})
 def edit(request, id):
     if request.user.is_authenticated:
@@ -53,3 +53,9 @@ def administrator(request):
         return render(request,"administrator.html",{'itens':itens})
     else:
         return redirect("/show")
+
+def like(request, id):
+    item = Item.objects.get(id=id)
+    item.curtidas = item.curtidas + 1
+    item.save()
+    return redirect("/show")

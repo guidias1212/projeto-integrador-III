@@ -7,6 +7,7 @@ class Item(models.Model):
     descricao = models.CharField(max_length=200)
     imagem = models.CharField(max_length=512)
     preco = models.DecimalField(max_digits=9, decimal_places=2)
+    curtidas = models.IntegerField()
 
     class Meta:
         db_table = "itens"
