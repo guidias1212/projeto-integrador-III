@@ -5,6 +5,7 @@ from django.shortcuts import render
 from django.shortcuts import render, redirect
 from cardapio_virtual.forms import ItemForm
 from cardapio_virtual.models import Item
+
 # Create your views here.
 def emp(request):
     if request.user.is_authenticated:
@@ -49,7 +50,7 @@ def destroy(request, id):
         return redirect("/show")
 def administrator(request):
     if request.user.is_authenticated:
-        itens = Item.objects.all()
+        itens = Item.objects.all().order_by('-curtidas')
         return render(request,"administrator.html",{'itens':itens})
     else:
         return redirect("/show")
@@ -59,3 +60,6 @@ def like(request, id):
     item.curtidas = item.curtidas + 1
     item.save()
     return redirect("/show")
+
+
+
