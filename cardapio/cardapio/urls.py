@@ -28,4 +28,6 @@ urlpatterns = [
     path('management/',include('django.contrib.auth.urls')),
     path('administrator',views.administrator),
     path('like/<int:id>',views.like),
+    path('send_temp', views.send_temp),
+    path('get_temp', views.get_temp),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

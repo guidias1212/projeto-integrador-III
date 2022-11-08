@@ -11,3 +11,10 @@ class Item(models.Model):
 
     class Meta:
         db_table = "itens"
+
+
+class Temperatura(models.Model):
+    temperatura = models.DecimalField(max_digits=9, decimal_places=2)
+
+    class Meta:
+        db_table = "temperatura"

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b64fb37a-81af-4f3e-a175-f46e2e263ce7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/projeto-integrador-III.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/projeto-integrador-I.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cardapio/cardapio/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cardapio/cardapio/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cardapio/cardapio/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cardapio/cardapio/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cardapio/cardapio_virtual/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cardapio/cardapio_virtual/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cardapio/cardapio_virtual/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/cardapio/cardapio_virtual/templates/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cardapio/cardapio_virtual/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cardapio/cardapio_virtual/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2HFE6M1S1qetCHOzYxLkaCKd0iC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/guilherme/Desktop/projeto-integrador-III",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b64fb37a-81af-4f3e-a175-f46e2e263ce7" name="Changes" comment="" />
+      <created>1667872254609</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667872254609</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

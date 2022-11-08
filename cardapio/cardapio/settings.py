@@ -28,7 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'projeto-integrador-poc.herokuapp.com',
     'projeto-integrador-poc.herokuapp.com',
-    'localhost'
+    'localhost',
+    '127.0.0.1'
 ]
 
 
@@ -78,7 +79,7 @@ WSGI_APPLICATION = 'cardapio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-'''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -101,7 +102,7 @@ DATABASES = {
         'PORT': os.environ['DATABASE_PORT']
     }
 }
-
+'''
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
