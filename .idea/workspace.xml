@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b64fb37a-81af-4f3e-a175-f46e2e263ce7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/projeto-integrador-III.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/projeto-integrador-I.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cardapio/cardapio/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cardapio/cardapio/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cardapio/cardapio/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cardapio/cardapio/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cardapio/cardapio_virtual/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cardapio/cardapio_virtual/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cardapio/cardapio_virtual/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/cardapio/cardapio_virtual/templates/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cardapio/cardapio_virtual/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cardapio/cardapio_virtual/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arduino/sensor_temperatura_umidade.ino" beforeDir="false" afterPath="$PROJECT_DIR$/arduino/sensor_temperatura_umidade.ino" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,17 +18,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/guilherme/Desktop/projeto-integrador-III",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/guilherme/Desktop/projeto-integrador-III&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
