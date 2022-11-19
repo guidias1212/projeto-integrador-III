@@ -68,3 +68,14 @@ heroku login
 heroku git:remote -a projeto-integrador-poc
 
 git push heroku main
+
+--ARDUINO e Raspberry Pi--
+
+Comando para liberar porta Serial de arduino em sistemas Unix:
+sudo chmod a+rw /dev/ttyACM0
+
+Projeto para medir temperatura:
+https://create.arduino.cc/projecthub/pibots555/how-to-connect-dht11-sensor-with-arduino-uno-f4d239
+
+Projeto para enviar dados via Raspbewrry Pi:
+https://roboticsbackend.com/raspberry-pi-arduino-serial-communication/

@@ -1,44 +1,43 @@
-#include <ESP8266HTTPClient.h>
-#include <ESP8266WiFi.h>
+#include "DHT.h"
+
+#define DHTPIN 8     // Digital pin connected to the DHT sensor
+
+#define DHTTYPE DHT11   // DHT 11
+
+DHT dht(DHTPIN, DHTTYPE);
 
 void setup() {
+  Serial.begin(9600);
+//  Serial.println(F("DHT11 test!"));
 
-  Serial.begin(115200);                 //Serial connection
-  WiFi.begin("NET_2G2E5168", "2F2E5168");   //WiFi connection
-
-  while (WiFi.status() != WL_CONNECTED) {  //Wait for the WiFI connection completion
-
-    delay(500);
-    Serial.println("Waiting for connection");
-
-  }
-
+  dht.begin();
 }
 
 void loop() {
+  // Wait a few seconds between measurements.
+  delay(5000);
 
-  if (WiFi.status() == WL_CONNECTED) { //Check WiFi connection status
+  // Reading temperature or humidity takes about 250 milliseconds!
+  // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
+  float h = dht.readHumidity();
+  // Read temperature as Celsius (the default)
+  float t = dht.readTemperature();
+  // Read temperature as Fahrenheit (isFahrenheit = true)
+  float f = dht.readTemperature(true);
 
-    HTTPClient http;    //Declare object of class HTTPClient
-
-    http.begin("http://localhost:8000/send_temp");      //Specify request destination
-    http.addHeader("Content-Type", "application/json");  //Specify content-type header
-
-    int httpCode = http.POST("{'temp':1212}");   //Send the request
-
-    String payload = http.getString();                  //Get the response payload
-
-    Serial.println(httpCode);   //Print HTTP return code
-    Serial.println(payload);    //Print request response payload
-
-    http.end();  //Close connection
-
-  } else {
-
-    Serial.println("Error in WiFi connection");
-
+  // Check if any reads failed and exit early (to try again).
+  if (isnan(h) || isnan(t) || isnan(f)) {
+    Serial.println(F("Failed to read from DHT sensor!"));
+    return;
   }
 
-  delay(30000);  //Send a request every 30 seconds
+  // Compute heat index in Fahrenheit (the default)
+  float hif = dht.computeHeatIndex(f, h);
+  // Compute heat index in Celsius (isFahreheit = false)
+  float hic = dht.computeHeatIndex(t, h, false);
 
+  Serial.print(F("{'temp':"));
+  Serial.print(t);
+  Serial.print(F("}"));
+  Serial.println(F(""));
 }
