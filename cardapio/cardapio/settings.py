@@ -25,12 +25,7 @@ SECRET_KEY = 'django-insecure-4#)ybezq$pr_q&%v@)p3+9)jp)(ec3%-#a)x(j=673pg2z4u0u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'projeto-integrador-poc.herokuapp.com',
-    'projeto-integrador-poc.herokuapp.com',
-    'localhost',
-    '127.0.0.1'
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -79,7 +74,7 @@ WSGI_APPLICATION = 'cardapio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -102,7 +97,7 @@ DATABASES = {
         'PORT': os.environ['DATABASE_PORT']
     }
 }
-'''
+
 
 
 # Password validation
