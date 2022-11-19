@@ -6,16 +6,11 @@ from django.shortcuts import render
 from django.shortcuts import render, redirect
 from cardapio_virtual.forms import ItemForm
 from cardapio_virtual.models import Item
-<<<<<<< HEAD
 from cardapio_virtual.models import Temperatura
 from django.views.decorators.csrf import csrf_exempt
 import json
-=======
 
->>>>>>> 259bcbced0dbbebaa97786d60ef1f2d33db19374
 # Create your views here.
-
-
 
 def emp(request):
     if request.user.is_authenticated:
@@ -72,7 +67,6 @@ def like(request, id):
     item.save()
     return redirect("/show")
 
-<<<<<<< HEAD
 @csrf_exempt
 def send_temp(request):
     if request.method == "POST":
@@ -86,7 +80,4 @@ def get_temp(request):
     obj_temp = Temperatura.objects.get(id=1)
     temperatura_atual = obj_temp.temperatura
     return HttpResponse(temperatura_atual)
-=======
 
-
->>>>>>> 259bcbced0dbbebaa97786d60ef1f2d33db19374
