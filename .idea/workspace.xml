@@ -4,8 +4,6 @@
     <list default="true" id="b64fb37a-81af-4f3e-a175-f46e2e263ce7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arduino/receber_temperatura_enviar_servidor.py" beforeDir="false" afterPath="$PROJECT_DIR$/arduino/receber_temperatura_enviar_servidor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arduino/sensor_temperatura_umidade.ino" beforeDir="false" afterPath="$PROJECT_DIR$/arduino/sensor_temperatura_umidade.ino" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

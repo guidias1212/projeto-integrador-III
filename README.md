@@ -79,3 +79,6 @@ https://create.arduino.cc/projecthub/pibots555/how-to-connect-dht11-sensor-with-
 
 Projeto para enviar dados via Raspbewrry Pi:
 https://roboticsbackend.com/raspberry-pi-arduino-serial-communication/
+
+
+pip install pyserial
