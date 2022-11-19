@@ -29,18 +29,6 @@
         <div class="container">
             <div class="row">
                 <h3 id="temp_id" lass="text-center">Temperatura local: {{ temp.temperatura }} °C</h3>
-            <script>
-                httpGet()
-                //var i = 1;
-                //var interval = setInterval( httpGet, 3000);
-                function httpGet() {
-                        var xmlHttp = new XMLHttpRequest();
-                        xmlHttp.open( "GET", "http://localhost:8000/get_temp", false ); // false for synchronous request
-                        xmlHttp.send( null );
-                        document.getElementById("temp_id").innerText = "Temperatura: " + xmlHttp.responseText + "°C";
-                    }
-
-            </script>
             </div>
         </div>
     </section>
