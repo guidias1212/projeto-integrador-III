@@ -34,7 +34,7 @@
                 var interval = setInterval( httpGet, 3000);
                 function httpGet() {
                         var xmlHttp = new XMLHttpRequest();
-                        xmlHttp.open( "GET", "http://localhost:8000/get_temp", false ); // false for synchronous request
+                        xmlHttp.open( "GET", "https://projeto-integrador-poc.herokuapp.com:8000/get_temp", false ); // false for synchronous request
                         xmlHttp.send( null );
                         document.getElementById("temp_id").innerText = "Temperatura: " + xmlHttp.responseText + "°C";
                     }
