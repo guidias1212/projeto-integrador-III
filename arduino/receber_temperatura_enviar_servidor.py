@@ -3,7 +3,9 @@ import requests
 
 ser = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
 ser.reset_input_buffer()
-url = 'http://localhost:8000/send_temp'
+# url = 'http://localhost:8000/send_temp'
+
+url = "https://projeto-integrador-poc.herokuapp.com/send_temp"
 
 while True:
     if ser.in_waiting > 0:
